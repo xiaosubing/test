@@ -127,7 +127,7 @@ def md5_encrypt(text):
 # 获取验证码
 timestamp = time.time()
 now = int(timestamp * 1000)
-strtemp = f"20e78a2{sid}{now}{clientX}{yLocal}132511415251d7838b3ffe73"
+strtemp = f"20e78a2{sid}{now}{clientX}{yLocal}{phone}1d7838b3ffe73"
 print(strtemp)
 salt = md5_encrypt(strtemp)
 print(salt)
@@ -156,7 +156,7 @@ data = {
     'seq': now,
     'clientX': clientX,
     'clientY': yLocal,
-    'phoneNu': '13251141525',
+    'phoneNu': phone,
     'businessType': '1',
     's': salt
 }
